@@ -9,9 +9,9 @@ Comparison of open source headless CMS. Inspired by [MicheleBertoli/css-in-js](h
 More ticks doesn't mean "better", it depends on your needs.
 
 |        | GraphQL | Mutations | Custom Fields | D&D Editor | Rich Text Editor | Group Fields | Media Library | Image Manipulation | Image Crops | Asset CDN | Previews | Releases | Localization | Localized fields | Revision history | Webhooks |
-|--------|---------|-----------|---------------|------------|------------------|--------------|---------------|--------------------|-------------|-----------|----------|----------|--------------|------------------|------------------|----------|
-| Prime  | ✅       | ✅         | ✅             | ✅          | ✅                | ✅            | 3rd-party     | 3rd-party          | ✅           | 3rd-party | ✅        | ✅        | ✅            | ❌                | ✅                | ✅        |
-| Strapi | ✅       | ❌         | ✅             | ❌          | ✅                | ❌            | 3rd-party     | 3rd-party          | ❌           | 3rd-party | ❌        | ❌        | ❌            | ❌                | ❌                | ✅        |
+| ------ | ------- | --------- | ------------- | ---------- | ---------------- | ------------ | ------------- | ------------------ | ----------- | --------- | -------- | -------- | ------------ | ---------------- | ---------------- | -------- |
+| Prime  | ✅      | ✅        | ✅            | ✅         | ✅               | ✅           | 3rd-party     | 3rd-party          | ✅          | 3rd-party | ✅       | ✅       | ✅           | ❌               | ✅               | ✅       |
+| Strapi | ✅      | ❌        | ✅            | ❌         | ✅               | ❌           | 3rd-party     | 3rd-party          | ❌          | 3rd-party | ❌       | ❌       | ❌           | ❌               | ❌               | ✅       |
 
 ## Alternatives
 
@@ -26,5 +26,4 @@ If your CMS is not listed here, feel free to add it.
 
 1. Create a new folder named CMS-name in the root folder.
 2. Add `docker-compose.yml`
-3. Add a new entry to `data.json`.
-4. Re-generate the data with: `...`.
+3. Add a new entry to `Readme.md`
