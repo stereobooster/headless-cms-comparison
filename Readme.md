@@ -8,13 +8,17 @@ Comparison of open source headless CMS. Inspired by [MicheleBertoli/css-in-js](h
 
 More ticks doesn't mean "better", it depends on your needs.
 
-**TODO** add table
+|        | GraphQL | Mutations | Custom Fields | D&D Editor | Rich Text Editor | Group Fields | Media Library | Image Manipulation | Image Crops | Asset CDN | Previews | Releases | Localization | Localized fields | Revision history | Webhooks |
+|--------|---------|-----------|---------------|------------|------------------|--------------|---------------|--------------------|-------------|-----------|----------|----------|--------------|------------------|------------------|----------|
+| Prime  | ✅       | ✅         | ✅             | ✅          | ✅                | ✅            | 3rd-party     | 3rd-party          | ✅           | 3rd-party | ✅        | ✅        | ✅            | ❌                | ✅                | ✅        |
+| Strapi | ✅       | ❌         | ✅             | ❌          | ✅                | ❌            | 3rd-party     | 3rd-party          | ❌           | 3rd-party | ❌        | ❌        | ❌            | ❌                | ❌                | ✅        |
 
 ## Alternatives
 
 - https://github.com/netlify/headlesscms.org/tree/master/content/projects
 - https://github.com/gentics/headless-cms-comparison
 - http://www.cmsmatrix.org/
+- https://docs.primecms.app/#/features
 
 ## Contributing
 
