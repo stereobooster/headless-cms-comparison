@@ -11,6 +11,6 @@ services:
     ports:
       - "5432:5432"
   app:
-    build: .
+    build: ./prime-docker
     ports:
       - "4000:4000"
