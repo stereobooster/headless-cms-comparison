@@ -32,6 +32,16 @@ If your CMS is not listed here, feel free to add it.
 
 ### Database to API
 
-- [PostgREST](http://postgrest.org) is a standalone web server that turns your PostgreSQL database directly into a RESTful API
-- [PostGraphile](https://www.graphile.org/postgraphile/) - Instantly spin-up a GraphQL API server by pointing PostGraphile at your existing PostgreSQL database
 - [hasura](https://hasura.io/) - Instant Realtime GraphQL on Postgres
+- [PostGraphile](https://www.graphile.org/postgraphile/) - Instantly spin-up a GraphQL API server by pointing PostGraphile at your existing PostgreSQL database
+- [PostgREST](http://postgrest.org) is a standalone web server that turns your PostgreSQL database directly into a RESTful API
+
+### Admin generators
+
+- [administrate](https://github.com/thoughtbot/administrate) RoR
+- [godmin](https://github.com/varvet/godmin) RoR
+- [activeadmin](https://github.com/activeadmin/activeadmin) RoR
+- [rails_admin](https://github.com/sferik/rails_admin) RoR
+- [trestle](https://github.com/TrestleAdmin/trestle) RoR
+- [react-admin](https://github.com/marmelab/react-admin) React
+- [canner](https://github.com/Canner/canner) React and co
