@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    image: agentejo/cockpit
+    ports:
+      - "8080:80"
+    restart: always
+    # volumes:
+    #   - ./db/storage/:/var/www/html/storage
+    #   - ./db/config/:/var/www/html/config
