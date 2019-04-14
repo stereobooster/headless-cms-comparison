@@ -19,6 +19,7 @@ More ticks doesn't mean "better", it depends on your needs.
 - https://github.com/gentics/headless-cms-comparison
 - http://www.cmsmatrix.org/
 - https://docs.primecms.app/#/features
+- [List of content management systems](https://en.wikipedia.org/wiki/List_of_content_management_systems)
 
 ## Contributing
 
