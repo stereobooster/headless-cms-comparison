@@ -35,6 +35,7 @@ If your CMS is not listed here, feel free to add it.
 - [hasura](https://hasura.io/) - Instant Realtime GraphQL on Postgres
 - [PostGraphile](https://www.graphile.org/postgraphile/) - Instantly spin-up a GraphQL API server by pointing PostGraphile at your existing PostgreSQL database
 - [PostgREST](http://postgrest.org) is a standalone web server that turns your PostgreSQL database directly into a RESTful API
+- [tuql](https://github.com/bradleyboy/tuql) is a simple tool that turns a sanely formatted sqlite database into a graphql endpoint
 
 ### Admin generators
 
