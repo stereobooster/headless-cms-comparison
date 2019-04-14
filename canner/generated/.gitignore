@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+
+# Canner generated files
+.cms
+canner.schema.json
+
+# Error files
+npm-debug.log
+yarn-error.log
