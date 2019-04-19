@@ -1,0 +1,44 @@
+---
+#global settings
+pid_dir: "~/.pg_chameleon/pid/"
+log_dir: "~/.pg_chameleon/logs/"
+log_dest: file
+log_level: info
+log_days_keep: 10
+rollbar_key: ""
+rollbar_env: ""
+
+#postgres  destination connection
+pg_conn:
+  host: "pg"
+  port: "5432"
+  user: "postgres"
+  password: "password"
+  database: "postgres"
+  charset: "utf8"
+
+sources:
+  mysql:
+    db_conn:
+      host: "db"
+      port: "3306"
+      user: "someusername"
+      password: "somepassword"
+      charset: "utf8"
+      connect_timeout: 10
+    grant_select_to:
+      - someusername
+    lock_timeout: "120s"
+    my_server_id: 100
+    replica_batch_size: 10000
+    replay_max_rows: 10000
+    batch_retention: "1 day"
+    copy_max_memory: "300M"
+    copy_mode: "file"
+    out_dir: /tmp
+    sleep_loop: 1
+    on_error_replay: continue
+    on_error_read: continue
+    auto_maintenance: "disabled"
+    gtid_enable: No
+    type: mysql

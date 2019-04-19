@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: "somedb"
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+      MYSQL_USER: "someusername"
+      MYSQL_PASSWORD: "somepassword"
+    ports:
+      - 3306:3306
+  # api:
+  #   image: directus/api:latest
+  #   environment:
+  #     DATABASE_HOST: db
+  #     DATABASE_NAME: "somedb"
+  #     DATABASE_USERNAME: "someusername"
+  #     DATABASE_PASSWORD: "somepassword"
+  #     ADMIN_EMAIL: "admin@localhost.com"
+  #     ADMIN_PASSWORD: "directusrocks"
+  #   ports:
+  #     - 7000:80
+  # web:
+  #   image: directus/app:latest
+  #   environment:
+  #     API_ENDPOINT: "API; http://localhost:7000/_/"
+  #   ports:
+  #     - 8000:80
+  pg:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./db/data/:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  chameleon:
+    build: ./chameleon
+    volumes:
+      - ./chameleon-conf:/root/.pg_chameleon
+    depends_on:
+      - pg
+      - db
+  # hasura:
+  #   build: ./
+  #   ports:
+  #     - "8080:8080"
+  #   environment:
+  #     - HASURA_GRAPHQL_DATABASE_URL=postgresql://postgres:password@pg:5432/postgres
+  #     - HASURA_GRAPHQL_ENABLE_CONSOLE=true
+  #   depends_on:
+  #     - pg
